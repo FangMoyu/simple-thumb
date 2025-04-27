@@ -56,7 +56,9 @@ public class BlogController {
 
     @GetMapping("/list")
     public BaseResponse<List<BlogVO>> list(HttpServletRequest request) {
+        // 获取博客列表
         List<Blog> blogList = blogService.list();
+        // 将其经过处理转为VO后返回给前端
         List<BlogVO> blogVOList = blogService.getBlogVOList(blogList, request);
         return ResultUtils.success(blogVOList);
     }

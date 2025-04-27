@@ -7,7 +7,15 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/thumb_db
     username: root
-    password: fzs20021230.
+    password: XXXXXXXXXX
+  data:
+    redis:
+      database: 0
+      host: localhost
+      password: XXXXXXXXXX
+      port: 6379
+      timeout: 5000
+
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: false
