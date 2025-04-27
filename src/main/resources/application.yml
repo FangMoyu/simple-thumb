@@ -7,12 +7,12 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/thumb_db
     username: root
-    password: XXXXXXXXXX
+    password: fzs20021230.
   data:
     redis:
       database: 0
       host: localhost
-      password: XXXXXXXXXX
+      password: fzs20021230.
       port: 6379
       timeout: 5000
 
