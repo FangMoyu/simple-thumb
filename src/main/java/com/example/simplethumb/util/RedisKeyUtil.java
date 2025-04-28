@@ -8,7 +8,7 @@ public class RedisKeyUtil {
      * @param userId
      * @return
      */
-    public static String getUserThumbKey(String userId) {
+    public static String getUserThumbKey(Long userId) {
         return ThumbConstant.USER_THUMB_KEY_PREFIX + userId;
     }
 

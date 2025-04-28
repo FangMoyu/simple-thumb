@@ -51,7 +51,7 @@ public class RedisLuaScriptConstant {
      * -1: 未点赞
      * 1: 操作成功
      */
-    public static final RedisScript<Long> UNTHUMB_SCRIPT = new DefaultRedisScript<>("""  
+    public static final RedisScript<Long> UNDO_THUMB_SCRIPT = new DefaultRedisScript<>("""  
             local tempThumbKey = KEYS[1]      -- 临时计数键（如 thumb:temp:{timeSlice}）  
             local userThumbKey = KEYS[2]      -- 用户点赞状态键（如 thumb:{userId}）  
             local userId = ARGV[1]            -- 用户 ID  
