@@ -22,7 +22,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionTemplate;
 
 // 显示指定 Bean 的名称为 thumbServiceDB，注入时只需要把变量名改成thumbServiceDB即可
-@Service("thumbService")
+@Service("thumbServiceLocalCache")
 @Slf4j
 @RequiredArgsConstructor
 public class ThumbServiceImpl extends ServiceImpl<ThumbMapper, Thumb>

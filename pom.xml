@@ -42,6 +42,12 @@
             <artifactId>hutool-all</artifactId>
             <version>5.8.16</version>
         </dependency>
+        <!-- 引入 spring-pulsar -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-pulsar</artifactId>
+        </dependency>
+
         <!-- MyBatis-Plus -->
         <dependency>
             <groupId>com.baomidou</groupId>

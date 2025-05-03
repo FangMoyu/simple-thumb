@@ -131,6 +131,12 @@ atlassian-ide-plugin.xml
 # Cursive Clojure plugin
 .idea/replstate.xml
 
+# 忽略 application.yml
+application.yml
+
+# 忽略 config 文件夹下的内容
+config/
+
 # Crashlytics plugin (for Android Studio and IntelliJ)
 com_crashlytics_export_strings.xml
 crashlytics.properties

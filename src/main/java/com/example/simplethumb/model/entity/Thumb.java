@@ -5,8 +5,12 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
+
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * 点赞表
@@ -14,6 +18,7 @@ import lombok.Data;
  */
 @TableName(value ="thumb")
 @Data
+
 public class Thumb implements Serializable {
     /**
      * 
@@ -38,6 +43,8 @@ public class Thumb implements Serializable {
 
     @TableField(exist = false)
     private static final long serialVersionUID = 1L;
+
+
 
     @Override
     public boolean equals(Object that) {
