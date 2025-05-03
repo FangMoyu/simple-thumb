@@ -23,14 +23,18 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
+/**
+ * 点赞消息消费者
+ * 负责将存储在 Redis 上的数据批量保存到数据库中
+ */
 @Service
 @RequiredArgsConstructor
 @Slf4j
 public class ThumbConsumer {
 
-    private final BlogMapper blogMapper;
+    private final BlogMapper blogMapper; // 博客数据访问对象
 
-    private final ThumbService thumbService;
+    private final ThumbService thumbService; // 点赞服务对象
 
     @PulsarListener(
             subscriptionName = "thumb-subscription", // 订阅名称

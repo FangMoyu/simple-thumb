@@ -30,6 +30,10 @@ import org.springframework.transaction.support.TransactionTemplate;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * 消息队列优化
+ * 将业务改造为消息发送者
+ */
 // 显示指定 Bean 的名称为 thumbServiceDB，注入时只需要把变量名改成thumbServiceDB即可
 @Service("thumbService")
 @Slf4j
