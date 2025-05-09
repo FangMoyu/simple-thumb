@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>simple-thumb</artifactId>
+    <artifactId>thunder-like</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>simple-thumb</name>
     <description>simple-thumb-project</description>
