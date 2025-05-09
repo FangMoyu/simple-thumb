@@ -2,7 +2,6 @@ package com.example.simplethumb.service.impl;
 
 import cn.hutool.core.lang.Pair;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.extension.conditions.query.LambdaQueryChainWrapper;
 import com.example.simplethumb.listener.thumb.msg.ThumbEvent;
 import com.example.simplethumb.mapper.BlogMapper;
 import com.example.simplethumb.model.entity.Thumb;
@@ -19,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
@@ -42,8 +40,8 @@ public class ThumbConsumer {
             schemaType = SchemaType.JSON, // 消息的序列化类型
             batch = true, // 是否批量处理消息
             consumerCustomizer = "thumbConsumerConfig", // 消费者自定义配置
-            negativeAckRedeliveryBackoff = "negativeAckRedeliveryBackoff", // 负确认重试间隔
-            ackTimeoutRedeliveryBackoff = "ackTimeoutRedeliveryBackoff", // 超时重试间隔
+            negativeAckRedeliveryBackoff = "negativeAckRedeliveryBackOff", // 负确认重试间隔
+            ackTimeoutRedeliveryBackoff = "ackTimeoutRedeliveryBackOff", // 超时重试间隔
             subscriptionType = SubscriptionType.Shared,// 订阅类型
             deadLetterPolicy = "deadLetterPolicy" // 死信队列策略
     )
